@@ -14,7 +14,7 @@ const options = DEFAULT_DATASETS.map(dataset => (
   </option>
 ));
 
-interface DatasetSelectorProps extends ActionHandler<DatasetUrlLoad> {
+export interface DatasetSelectorProps extends ActionHandler<DatasetUrlLoad> {
   name: string;
 }
 

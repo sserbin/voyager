@@ -11,7 +11,7 @@ export interface PlotListProps extends ActionHandler<ShelfAction> {
   plots: PlotObject[];
 }
 
-class PlotListBase extends React.PureComponent<PlotListProps, any> {
+export class PlotListBase extends React.PureComponent<PlotListProps, any> {
   public render() {
     const {plots, handleAction} = this.props;
     const plotListItems = plots.map(plot => {

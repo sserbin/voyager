@@ -67,7 +67,7 @@
     "autoprefixer": "^6.7.6",
     "codecov": "^1.0.1",
     "css-loader": "^0.26.1",
-    "extract-text-webpack-plugin": "beta",
+    "extract-text-webpack-plugin": "2.0.0-rc.3",
     "file-loader": "^0.10.1",
     "jest": "~18",
     "node-sass": "^4.5.0",
@@ -103,5 +103,7 @@
     ],
     "coverageDirectory": "./coverage/",
     "collectCoverage": true
-  }
+  },
+  "main": "dist/bundle.js",
+  "types": "dist/dist/index.d.ts"
 }

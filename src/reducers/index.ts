@@ -1,4 +1,6 @@
+import {Action as ReduxAction} from 'redux';
 import undoable from 'redux-undo';
+import {StateWithHistory} from 'redux-undo';
 
 import {Action, REDO, UNDO} from '../actions';
 import {HISTORY_LIMIT} from '../constants';

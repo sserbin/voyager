@@ -5,7 +5,7 @@ var WebpackNotifierPlugin = require('webpack-notifier');
 
 module.exports = {
   entry: {
-    bundle: path.resolve(__dirname, 'src/index.tsx'),
+    bundle: path.resolve(__dirname, 'src/main.ts'),
     vendor: [
       // React
       'react-css-modules',
@@ -31,7 +31,8 @@ module.exports = {
   output: {
     filename: "[name].js",
     path: path.resolve(__dirname, 'dist'),
-    publicPath: '/dist/'
+    publicPath: '/dist/',
+    libraryTarget: "commonjs2",
   },
 
   // Enable sourcemaps for debugging webpack's output.
@@ -112,10 +113,10 @@ module.exports = {
   // assume a corresponding global variable exists and use that instead.
   // This is important because it allows us to avoid bundling all of our
   // dependencies, which allows browsers to cache those libraries between builds.
-  externals: {
+  /*externals: {
     "react": "React",
     "react-dom": "ReactDOM"
-  },
+  },*/
   plugins: [
     new ExtractTextPlugin({
       filename: "style.css",

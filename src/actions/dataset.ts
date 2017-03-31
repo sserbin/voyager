@@ -20,7 +20,8 @@ export const DATASET_URL_RECEIVE = 'DATA_URL_RECEIVE';
 export type DatasetUrlReceive = ReduxAction<typeof DATASET_URL_RECEIVE, {
   name: string,
   url: string,
-  schema: Schema
+  schema: Schema,
+  values?: Object[]
 }>;
 
 export type DatasetUrlLoad = ThunkAction<void , State, undefined>;

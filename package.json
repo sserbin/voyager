@@ -104,6 +104,6 @@
     "coverageDirectory": "./coverage/",
     "collectCoverage": true
   },
-  "main": "dist/bundle.js",
-  "types": "dist/dist/index.d.ts"
+  "main": "src/main",
+  "types": "dist/dist/main.d.ts"
 }

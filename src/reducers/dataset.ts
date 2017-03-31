@@ -10,13 +10,13 @@ export function datasetReducer(dataset: Readonly<Dataset>, action: Action): Data
       };
 
     case DATASET_URL_RECEIVE:
-      const {name, url, schema} = action.payload;
+      const {name, url, schema, values} = action.payload;
       return {
         ...dataset,
         isLoading: false,
         name,
         schema,
-        data: {url}
+        data: (url ? {url} : {values})
       };
   }
   return dataset;
